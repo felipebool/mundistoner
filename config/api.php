@@ -9,6 +9,8 @@ define(
 //    'http://4b680d5ffaad4009ac8da8f76d44bd05.cloudapp.net'
 );
 
+define('API_BASE_URL_TRANSACTION', 'https://sandbox.mundipaggone.com');
+
 /*
     API endpoints
 */
