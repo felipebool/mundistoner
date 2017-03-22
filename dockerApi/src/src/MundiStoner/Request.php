@@ -15,9 +15,13 @@ class Request
 
     private function setBasicOptions()
     {
-        $this->curlOptions[CURLOPT_RETURNTRANSFER] = 1;
+        $this->curlOptions[CURLOPT_RETURNTRANSFER] = true;
         $this->curlOptions[CURLOPT_MAXREDIRS] = 10;
         $this->curlOptions[CURLOPT_TIMEOUT] = 30;
+//        $this->curlOptions[CURLOPT_SSL_VERIFYPEER] = true;
+//        $this->curlOptions[CURLOPT_FOLLOWLOCATION] = true;
+
+        // MUST SET SSL CERTIFICATE
     }
 
     public function setUrl($url)
