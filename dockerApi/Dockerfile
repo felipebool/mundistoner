@@ -9,7 +9,7 @@ ENV apache_version="2.4.10" php_version="5.6.30" \
     apache_modules="libapache2-mod-php5" \
     php_modules="php5-curl php5-json" \
     api_url="api.mundistoner.localhost" \
-    api_source="src/api/*" \
+    api_source="src/" \
     api_dest="/var/www/api.mundistoner.localhost/public_html/" 
     
 # update/upgrade
