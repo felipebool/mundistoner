@@ -41,6 +41,7 @@ SERVER_ALIAS="www."$1
 SERVER_ADMIN="webmaster@$1"
 VHOST_DIR="/var/www/$1"
 DOCUMENT_ROOT="$VHOST_DIR/public_html"
+APACHE_DEFAULT_CONF="/etc/apache2/sites-available/000-default.conf"
 
 VHOST_FILE="/etc/apache2/sites-available/$SERVER_NAME.conf"
 
@@ -101,10 +102,16 @@ cat <<EOF > "$VHOST_FILE"
 </Virtualhost>
 EOF
 
+cat <<EOF > "$APACHE_DEFAULT_CONF"
+<Directory "$DOCUMENT_ROOT">
+    AllowOverride All
+</Directory>
+EOF
+
 # enable vhost
 a2ensite $SERVER_NAME
 
-service apache2 reload
+#service apache2 start
 
 exit 0
 

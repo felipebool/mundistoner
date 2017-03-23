@@ -33,9 +33,9 @@ COPY $api_source $api_dest
 RUN chown -R www-data:www-data $api_dest
 
 # enable apache mod_rewrite module
-RUN a2enmod rewrite
-RUN echo Listen 8080 >> /etc/apache2/ports.conf
-RUN service apache2 start
+RUN a2enmod rewrite && echo Listen 8080 >> /etc/apache2/ports.conf
+RUN service apache2 stop && service apache2 start
 
 EXPOSE 8080
+ENTRYPOINT service apache2 start
 
