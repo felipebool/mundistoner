@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+            <div class="panel-heading">
+                <div class="panel-title text-center">
+                    <h1 class="title">Checkout</h1>
+                </div>
+            </div> 
+            <form class="order-form">
+                <div class="form-group">
+                    <label for="creditCardHolderName">Seu nome</label>
+                    <input type="text" class="form-control" name="creditCardHolderName" placeholder="Seu nome">
+                </div>
+
+                <div class="form-group">
+                    <label for="empty-select">Selecione a loja</label>
+                    <select class="form-control empty-select">
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="creditCardHolderEmail">Seu email</label>
+                    <input type="email" class="form-control" name="creditCardHolderEmail" placeholder="Seu email">
+                </div>
+
+                <div class="form-group">
+                    <label for="CreditCardNumber">Número do cartão</label>
+                    <input type="number" class="form-control" name="CreditCardNumber" placeholder="Número do cartão">
+                </div>
+
+                <div class="form-group">
+                    <label for="HolderName">Nome do cartão</label>
+                    <input type="text" class="form-control" name="HolderName" placeholder="Nome do cartão">
+                    <small class="form-text text-muted">Coloque o nome assim como está escrito no cartão.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="ExpMonth">Mês de expiração</label>
+                    <input type="number" class="form-control" name="ExpMonth" placeholder="Mês de expiração">
+                </div>
+
+                <div class="form-group">
+                    <label for="ExpYear">Ano de expiração</label>
+                    <input type="number" class="form-control" name="ExpYear" placeholder="Ano de expiração">
+                </div>
+
+                <div class="form-group">
+                    <label for="CreditCardBrand">Bandeira do cartão</label>
+                    <input type="text" class="form-control" name="CreditCardBrand" placeholder="Bandeira do cartão">
+                    <small class="form-text text-muted">Visa, MasterCard...</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="SecurityCode">Código de segurança</label>
+                    <input type="text" class="form-control" name="SecurityCode" placeholder="SecurityCode">
+                    <small class="form-text text-muted">Código de 3 dígitos presente no verso do cartão</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="AmountInCents">Total da compra</label>
+                    <input type="text" class="form-control" name="AmountInCents" placeholder="Total da compra">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Finalizar</button>
+            </form>
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/js/cookie.js"></script>
+    <script src="assets/js/merchants.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+

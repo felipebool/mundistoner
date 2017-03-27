@@ -1,0 +1,4 @@
+.dockerignore
+compose.json
+compose.lock
+
