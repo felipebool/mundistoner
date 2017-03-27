@@ -7,6 +7,9 @@ consumiria esta api. Além do docker e docker-compose, resolvi usar também o
 nginx fazendo proxy reverso para o Apache e um micro framework que sempre
 tive curiosidade, o Slim.
 
+Uma versão funcional pode ser encontrada em [mundistoner.fmlopes.com.br](http://mundistoner.fmlopes.com.br)
+
+
 As próximas seções explicam melhor como foi feita a solução.
 
 ## Docker
